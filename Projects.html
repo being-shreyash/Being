@@ -45,102 +45,103 @@
             </nav>
             <div class="container"></div>
         </div>
-        <div>
-            <img align="right" src="download.png" alt="Logo">
-        </div>
+        
 
     </header><br>
     <div>
-        <h2><u>Admission Form</u></h2>
+        <h2><u><b>Admission Form</b></u></h2>
     </div>
 
-    <div><h3>Personl Details:</h3></div>
+    <div><h3><b>Personl Details:</b></h3></div>
     
     <div>
         <form action="backend.php">
             <ul><div>
-                Name:<input type="text"><br><br>
-                Father's Name:<input type="text"><br><br>
-                Mothers's Name:<input type="text"><br><br>
-                DOB:<input type="date"><br><br>
-                Mobile number:<input type="number" placeholder="number dede">
+                <span><b>Name:</b><input type="text"></span>
+                <span><b>Father's Name:</b><input type="text"></span><br><br>
+                <span><b>Mothers's Name:</b><input type="text"></span>
+                <span><b>DOB:</b><input type="date"></span><br><br>
+                <b>Mobile number:</b><input type="number" placeholder="number dede">
 
             </div></ul><br>
             <div>
-                <ul>Mode of Admission:<br><label>
+                <ul><b>Mode of Admission:</b><br><label>
                     <input type="radio" name="option" value="option1">
-                    JEE
+                    <b>JEE</b>
                   </label><br>
                   
                   <label>
                     <input type="radio" name="option" value="option2">
-                    WBJEE
+                    <b>WBJEE</b>
                   </label><br>
                   
                   <label>
                     <input type="radio" name="option" value="option3">
-                    Direct Admission
+                    <b>Direct Admission</b>
                   </label><br><br></ul>
             </div>
             <ul><div>
-                JEE/WBJEE Application No.:<input type="number"><br><br>
+                <b>JEE/WBJEE Application No.:</b><input type="number"><br><br>
             </div></ul>
             <ul><div>
-                Domicile of West Bengal:
+                <b>Domicile of West Bengal:</b>
                 <label>
                     <input type="radio" name="option6" id="option4">
-                    Yes
+                    <b>Yes</b>
                 </label>
                 <label>
                     <input type="radio" name="option6" id="option5">
-                    No<br><br>
+                    <b>No</b><br><br>
                 </label>
             </div></ul>
             <ul><div>
                 <label for="dropdown">Category:</label>
             <select id="dropdown" name="dropdown">
-            <option value="option1">General</option>
-            <option value="option2">Gen-EWS</option>
-            <option value="option3">OBC/NCL</option>
-            <option value="option4">SC</option>
-            <option value="option5">ST</option>
+            <option value="option1"><b>General</b></option>
+            <option value="option2"><b>Gen-EWS</b></option>
+            <option value="option3"><b>OBC/NCL</b></option>
+            <option value="option4"><b>SC</b></option>
+            <option value="option5"><b>ST</b></option>
+            
+            
+            
           <!-- Add more options as needed -->
             </select><br>
             </div></ul>
 
-            <div><h4>In which Category you belong to:</h4></div>
+            <div><h4><b>In which Category you belong to:</b></h4></div>
 
                 <ul><div style="font-family: Arial, Helvetica, sans-serif;">
                     <label style="font-size: small;">
                         <input type="checkbox" name="option1" value="option1">
-                        <b>OBC-A</b>
+                        <b><b>OBC-A</b></b>
                     </label>
                     <label style="font-size: small;">
                         <input type="checkbox" name="option2" value="option2">
-                        <b>OBC-B</b>
+                        <b><b>OBC-B</b></b>
                     </label>
                     <label style="font-size: small;">
                         <input type="checkbox" name="option3" id="option3">
-                        <b>TFW</b>
+                        <b><b>TFW</b></b>
                     </label>
                     <label style="font-size: small;">
                         <input type="checkbox" name="option4" id="option4">
-                        <b>Defence Ward</b>
+                        <b><b>Defence Ward</b></b>
                     </label>
                     <label style="font-size: small;">
                         <input type="checkbox" name="option5" id="option5">
-                        <b>Sports Quota</b>
+                        <b><b>Sports Quota</b></b>
                     </label>
                 
                 </div></ul>
 
             <div>
-                <h3>Permanent Address:</h3>
+                <h3><b>Permanent Address:</b></h3>
             </div>
 
             <!-- State Dropdown -->
     <div class="dropdown">
-        <label for="stateSelect">Select State:</label>
+        <label for="stateSelect"><b>Select State:</b></label>
         <select id="stateSelect" onchange="populateDistricts()">
             <!-- Options will be populated dynamically -->
         </select>
@@ -148,34 +149,19 @@
 
     <!-- District Dropdown -->
     <div class="dropdown">
-        <label for="districtSelect">Select District:</label>
+        <label for="districtSelect"><b>Select District:</b></label>
         <select id="districtSelect">
             <!-- Options will be populated dynamically -->
         </select>
     </div>
 
 
+            
+            
+
             <div>
-                <h3>Present Address:</h3>
-            </div>
-            <div class="dropdown">
-                <label for="stateSelect">Select State:</label>
-                <select id="stateSelect" onchange="populateDistricts()">
-                    <!-- Options will be populated dynamically -->
-                </select>
-            </div>
-
-            <div class="dropdown">
-                <label for="districtSelect">Select District:</label>
-                <select id="districtSelect">
-                    <!-- Options will be populated dynamically -->
-                </select>
-            </div>
-            
-
-            
-                Address:<input type="text"><br><br>
-                PIN:<input type="number">
+                <b>Address:</b><input type="text"><br><br>
+                <b>PIN:</b><input type="number">
             </div></ul>
 
             <footer><div><b>Submit Application Form:</b><input type="submit"></div></footer>
@@ -199,20 +185,34 @@
 
 <style>
 
+    html, body {
+        height: 100%;
+        margin: 0%;
+    }
+
+    ul {
+        font-display: bold;
+    }
+
+    
+
 
     h1 {
         text-align: center;
-        color: white;
+        color: rgb(252, 145, 5);
     }
 
-    header {
-        background-color: rgb(3, 100, 129);
-    }
-
+    
+    
     body {
-        
-        font-family: 'Times New Roman', Times, serif;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hithaldia.jpg/1280px-Hithaldia.jpg);
+        background-size: cover; 
+        background-position: top; 
+        background-repeat: repeat; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(233, 146, 17);
     }
+
 
     nav {
         text-align: center;
@@ -220,7 +220,7 @@
     }
 
     nav a {
-            color: #f2f5f7;
+            color: #03090e;
             text-decoration: none;
             padding: 10px 15px;
             margin: 0 5px;
@@ -229,20 +229,20 @@
         }
 
         nav a:hover {
-            background-color: #0b0b0c;
+            background-color: #e3e3f7;
                 }
         
         h2 {
-            color: rgb(3, 100, 129);
+            color: rgb(252, 145, 5);
         }
 
         footer {
-            border: #0b0b0c;
+            border: #630000;
             border-radius: 50%;
             border-color: blue;
             text-align: right;
             text-decoration-color: green;
-            color: rgb(3, 100, 129);
+            color: rgb(241, 158, 3);
             }
 
 </style>
