@@ -1,0 +1,304 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Institute of Technology</title>
+    <style>
+        /* Optional: Add CSS for styling */
+        /* Style for dropdowns */
+        .dropdown {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+    <header>
+        <div>
+        <h1>ABC Institite of Technology</h1>
+        </div>
+        <div>
+            <nav> 
+                <a href="#"><b>Home</b></a>
+                <a href="#"><b>About</b></a>
+                <a href="#"><b>Academics</b></a>
+                <a href="#"><b>Contact</b></a>
+            </nav>
+            <div class="container"></div>
+        </div>
+        
+
+    </header><br>
+    <div>
+        <h2><u><b>Admission Form</b></u></h2>
+    </div>
+
+    <div><h3><b>Personl Details:</b></h3></div>
+    
+    <div>
+        <form action="backend.php">
+            <ul><div>
+                <b>Name</b>:<input type="text"><br><br>
+                <b>Father's Name:</b><input type="text"><br><br>
+                <b>Mothers's Name:</b><input type="text"><br><br>
+                <b>DOB:</b><input type="date"><br><br>
+                <b>Mobile number:</b><input type="number" placeholder="number dede">
+
+            </div></ul><br>
+            <div>
+                <ul><b>Mode of Admission:</b><br><label>
+                    <input type="radio" name="option" value="option1">
+                    <b>JEE</b>
+                  </label><br>
+                  
+                  <label>
+                    <input type="radio" name="option" value="option2">
+                    <b>WBJEE</b>
+                  </label><br>
+                  
+                  <label>
+                    <input type="radio" name="option" value="option3">
+                    <b>Direct Admission</b>
+                  </label><br><br></ul>
+            </div>
+            <ul><div>
+                <b>JEE/WBJEE Application No.:</b><input type="number"><br><br>
+            </div></ul>
+            <ul><div>
+                <b>Domicile of West Bengal:</b>
+                <label>
+                    <input type="radio" name="option6" id="option4">
+                    <b>Yes</b>
+                </label>
+                <label>
+                    <input type="radio" name="option6" id="option5">
+                    <b>No</b><br><br>
+                </label>
+            </div></ul>
+            <ul><div>
+                <label for="dropdown"><b>Category:</b></label>
+            <select id="dropdown" name="dropdown">
+            <option value="option1"><b>General</b></option>
+            <option value="option2"><b>Gen-EWS</b></option>
+            <option value="option3"><b>OBC/NCL</b></option>
+            <option value="option4"><b>SC</b></option>
+            <option value="option5"><b>ST</b></option>
+          <!-- Add more options as needed -->
+            </select><br>
+            </div></ul>
+
+            <div><h4><b>In which Category you belong to:</b></h4></div>
+
+                <ul><div style="font-family: Arial, Helvetica, sans-serif;">
+                    <label style="font-size: small;">
+                        <input type="checkbox" name="option1" value="option1">
+                        <b>OBC-A</b>
+                    </label>
+                    <label style="font-size: small;">
+                        <input type="checkbox" name="option2" value="option2">
+                        <b>OBC-B</b>
+                    </label>
+                    <label style="font-size: small;">
+                        <input type="checkbox" name="option3" id="option3">
+                        <b>TFW</b>
+                    </label>
+                    <label style="font-size: small;">
+                        <input type="checkbox" name="option4" id="option4">
+                        <b>Defence Ward</b>
+                    </label>
+                    <label style="font-size: small;">
+                        <input type="checkbox" name="option5" id="option5">
+                        <b>Sports Quota</b>
+                    </label>
+                
+                </div></ul>
+
+            <div>
+                <h3><b>Permanent Address:</b></h3>
+            </div>
+
+            <!-- State Dropdown -->
+    <div class="dropdown">
+        <label for="stateSelect"><b>Select State:</b></label>
+        <select id="stateSelect" onchange="populateDistricts()">
+            <!-- Options will be populated dynamically -->
+        </select>
+    </div>
+
+    <!-- District Dropdown -->
+    <div class="dropdown">
+        <label for="districtSelect"><b>Select District:</b></label>
+        <select id="districtSelect">
+            <!-- Options will be populated dynamically -->
+        </select>
+    </div>
+
+
+            
+            
+
+            
+                <b>Address</b>:<input type="text"><br><br>
+                <b>PIN:</b><input type="number">
+            </div></ul>
+
+            <footer><div><b>Submit Application Form:</b><input type="submit"></div></footer>
+        </form>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+    body {
+            background-image: url('WhatsApp Image 2024-09-10 at 7.21.18 PM.jpeg');
+            background-size: 60%;
+            background-position: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(226, 129, 2);
+    }
+
+
+    h1 {
+        text-align: center;
+        color: rgb(226, 129, 2);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    
+
+    
+
+    nav {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav a {
+            color: #031725;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #bdbdd8;
+                }
+        
+        h2 {
+            color: rgb(226, 129, 2);
+        }
+
+        footer {
+            border-radius: 50%;
+            text-align: right;
+            color: rgb(0, 33, 247);
+            }
+
+</style>
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript to populate dropdowns -->
+    <script>
+        // JSON object for state-district mapping (you can use a more comprehensive dataset)
+        var stateDistricts = {
+            "Andhra Pradesh": ["Anantapur", "Chittoor", "East Godavari", "Guntur", "Krishna", "Kurnool", "Prakasam", "Srikakulam", "Visakhapatnam", "Vizianagaram", "West Godavari", "YSR Kadapa"],
+            "Arunachal Pradesh": ["Tawang", "West Kameng", "East Kameng", "Papum Pare", "Kurung Kumey", "Kra Daadi", "Lower Subansiri", "Upper Subansiri", "West Siang", "East Siang", "Siang", "Upper Siang", "Lower Siang", "Dibang Valley", "Lower Dibang Valley", "Anjaw", "Lohit", "Namsai", "Changlang", "Tirap", "Longding"],
+            "Bihar":["Araria","Arwal","Aurangabad","Banka","Begusarai","Bhagalpur","Bhojpur", "Munger", "","Patna"]
+            
+            // Add more states and districts as needed
+        };
+
+        // Function to populate state dropdown
+        function populateStates() {
+            var stateSelect = document.getElementById("stateSelect");
+            for (var state in stateDistricts) {
+                var option = document.createElement("option");
+                option.text = state;
+                stateSelect.add(option);
+            }
+            // Trigger district population for the first state
+            populateDistricts();
+        }
+
+        // Function to populate district dropdown based on selected state
+        function populateDistricts() {
+            var stateSelect = document.getElementById("stateSelect");
+            var districtSelect = document.getElementById("districtSelect");
+            var selectedState = stateSelect.value;
+
+            // Clear previous options
+            districtSelect.innerHTML = "";
+
+            // Populate districts based on selected state
+            if (selectedState !== "") {
+                var districts = stateDistricts[selectedState];
+                districts.forEach(function(district) {
+                    var option = document.createElement("option");
+                    option.text = district;
+                    districtSelect.add(option);
+                });
+            }
+        }
+
+        // Call populateStates function on page load
+        populateStates();
+    </script>
+
+    
+</body>
+</html>
